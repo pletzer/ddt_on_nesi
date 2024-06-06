@@ -34,11 +34,13 @@ cmake --build .
 
 ## Running the debugger
 
-In the build directory type
+Documentation on how to use `ddt` on NeSI can be found [here](http://127.0.0.1:8000/nesi/support-docs/Scientific_Computing/Profiling_and_Debugging/Debugging/#ddt-offline-mode). 
+
+Here we provide a Fortran code for you to debug (C++ executables are available under the `upwind/cxx` directory. In the build directory type
 ```
 ddt upwind/fortran/upwindF08
 ```
-Adjust the working directory. Set the queue (partition) parameters. Click submit. You job will now be in the queue.
+Adjust the working directory. Set the queue (partition) parameters. Specify the command line arguments (e.g. 100 10) and click submit. You job will now be in the queue.
 
 You should now be able to step through the code, set breakpoints and see the call stack. 
 
